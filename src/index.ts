@@ -7,6 +7,11 @@ app.get('/',(req,res)=>{
  res.status(200).json({message:"ok"})
  sequelize.testconnect()
 })
+app.get('/ping',(req,res)=>{
+    console.log("tesst");
+    res.status(200).json({message:"ok ping"})
+    sequelize.testconnect()
+   })
 app.listen(port,()=>
 {
     console.log(`serrver run on 8080`);
