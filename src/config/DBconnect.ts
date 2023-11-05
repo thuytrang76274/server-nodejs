@@ -21,4 +21,4 @@ async function testconnect() {
 
 }
 testconnect()
-export default {sequelize,testconnect};
+export default sequelize;
